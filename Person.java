@@ -1,17 +1,17 @@
 class Persona
 {
-    String FirstName;
-    String LastName;
+    String Firstname;
+    String Lastname;
     int age;
-    Persona(String FName,String LName,int a)
+    Persona(String Fname,String Lname,int a)
      {
-        FirstName = FName;
-        LastName = LName;
+        Firstname = Fname;
+        Lastname = Lname;
         age = a;
      }
      String getfullname()
      {
-        return FirstName+" "+LastName;
+        return Firstname+" "+Lastname;
      }
 }
      class Person
