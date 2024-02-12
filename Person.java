@@ -1,33 +1,28 @@
-class Persona
-{
-    String Firstname;
-    String Lastname;
+class Persona {
+    String firstName;
+    String lastName;
     int age;
-    Persona(String Fname,String Lname,int a)
-     {
-        Firstname = Fname;
-        Lastname = Lname;
-        age = a;
-     }
-     String getfullname()
-     {
-        return Firstname+" "+Lastname;
-     }
+Persona(String fName, String lName, int a) {
+    firstName = fName;
+    lastName =  lName;
+    age = a;
 }
-     class Person
-     {
-        public static void main(String arg[])
-        {
-            Persona a1 = new Persona("John","Doe",30 );
-            Persona a2 = new Persona("Alice","Smith",25);
+String getFullName(){
+    return firstName + " " + lastName;
+}
+}
+class Person{
+    public static void main (String args []) {
+    Persona a1 = new Persona("Jhon", "Doe", 30);
+    Persona a2 = new Persona("Alice", "Smith", 25);
 
-            System.out.println("Person 1:"+a1.getfullname());
-            System.out.println("Person 2:"+a2.getfullname());
-            double average=((a1.age + a2.age)/2.0);
-            System.out.println("Average Age:"+average);
-        }
-     }
+    String  kk = a1.getFullName();
+    String lk = a2.getFullName();
 
-    
+    System.out.println("Person 1:"+kk);
+    System.out.println("Person 2:"+lk);
 
-
+    double average = ((a1.age + a2.age)/2.0);
+    System.out.println ("Average Age:" +average);
+}
+}
